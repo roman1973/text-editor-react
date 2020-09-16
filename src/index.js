@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './style/index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Helmet from 'react-helmet'
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
+    <Helmet
+      title='Text Editor'
+    />
     <App />
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 

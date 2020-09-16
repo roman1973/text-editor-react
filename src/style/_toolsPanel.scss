@@ -1,0 +1,38 @@
+.tools-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid $dark-gray;
+  border-bottom-color: transparent;
+
+  &.footer {
+     border: 1px solid $dark-gray;
+     border-top-color: transparent;
+   }
+
+  .tool {
+    display: flex;
+    align-items: center;  
+
+      &:hover {
+        color: rgb(70, 95, 238); 
+    
+        svg {
+          fill: rgb(70, 95, 238);
+        } 
+    }
+
+    &.undo {
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .tool-value {
+      max-width: 20px;
+      cursor: pointer;
+      border: none;
+      margin: 8px;
+    }
+  }
+}

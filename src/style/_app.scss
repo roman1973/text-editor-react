@@ -1,0 +1,25 @@
+.wrapper{
+    width: 85vw;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: cornsilk;
+     
+    .title {
+        @include PT(25px, 45px);
+        width: max-content;
+        margin: 0 auto; 
+        
+    }
+
+    .text-area {
+        @include Lato(18px, 26px);
+        width: 100%;
+        height: calc(100vh - 150px);
+        padding: 20px 10px;
+        border-left: 20px solid cornsilk;
+        border-right: 20px solid cornsilk;
+        outline: 1px solid gainsboro;
+        background-color: gainsboro; 
+        overflow: auto;
+    }
+}

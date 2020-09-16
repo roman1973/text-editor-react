@@ -1,0 +1,16 @@
+/* mixin for PT font-family */
+@mixin PT($font-size, $line-height, $color: $dark-gray) {
+    font-family: $PT-font;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+  }
+
+  /* mixin for lato font-family */
+@mixin Lato($font-size, $line-height, $color: $strong-blue, $font-weight: 900) {
+    font-family: $Lato-font;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    font-weight: $font-weight;
+  }
